@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/dark</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="fullScreen" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="lightSTT" parent="AppTheme">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+
+</resources>

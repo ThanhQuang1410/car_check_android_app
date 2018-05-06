@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">car_check</string>
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_compare">So sánh</string>
+    <string name="nav_follow">Theo dõi</string>
+    <string name="nav_more">Thêm nữa</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
