@@ -59,7 +59,7 @@
                     android:layout_height="40dp"
                     android:background="@drawable/btn1"
                     android:gravity="center"
-                    android:text="SIGN UP"
+                    android:text="đăng ký"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -71,7 +71,7 @@
                     android:layout_height="45dp"
                     android:background="@drawable/btn2"
                     android:gravity="center"
-                    android:text="VISIT AS GUEST"
+                    android:text="Tham quan ứng dụng"
                     android:textColor="@color/white"
                     android:textSize="11sp"
                     android:textStyle="bold"/>
@@ -121,7 +121,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/btn3"
                 android:gravity="center"
-                android:text="SIGN IN"
+                android:text="đăng nhập"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>

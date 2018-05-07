@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MoreFragment">
+    tools:context=".MoreFragment"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="MORE" />
+        android:background="@drawable/under_line">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_head"
+            android:layout_gravity = "center"
+            android:textSize="20sp"
+            android:id="@+id/toolbar_title"
+            android:translationY="7dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/ic_screen_lock"
+            android:drawablePadding="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:textSize="17sp"
+            android:background="@drawable/under_line"/>
+        <TextView
+            android:id="@+id/term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/term"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/term"
+            android:drawablePadding="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:textSize="17sp"
+            android:background="@drawable/under_line"/>
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/about"
+            android:drawablePadding="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:textSize="17sp"
+            android:background="@drawable/under_line"/>
+        <TextView
+            android:id="@+id/log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_out"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/log_out"
+            android:drawablePadding="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:textSize="17sp"
+            android:background="@drawable/under_line"/>
+    </LinearLayout>
+
+</RelativeLayout>

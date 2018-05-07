@@ -4,6 +4,7 @@
     <color name="orange">#FF5050</color>
     <color name="white">#ffffff</color>
     <color name="grey">#979797</color>
+    <color name="light_grey">#DFDFDF</color>
     <color name="primary_material_light_1">#000014</color>
     <color name="legacy_primary">#000014</color>
     <color name="legacy_primary_dark">#000014</color>

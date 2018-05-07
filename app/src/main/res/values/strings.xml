@@ -16,4 +16,17 @@
     <string name="featured_head">BWM i10 sẽ trình làng thàng 10 năm nay</string>
     <string name="news_head">Mẫu xe mới sẽ được xuất xưởng năm nay bởi hãng Ferari</string>
     <string name="review_head">Cùng trải nghiệm siêu xe Farari xc21</string>
+
+    <string name="more_head">Thêm nữa</string>
+    <string name="compare">So sánh</string>
+    <string name="follow">Theo dõi</string>
+
+    <string name="privacy">Riêng tư</string>
+    <string name="term">Điều khoản</string>
+    <string name="about_us">Về chúng tôi</string>
+    <string name="log_out">Thoát</string>
+
+    <string name="car_name">Flat c500</string>
+    <string name="car_color">Color: Trắng</string>
+    <string name="car_price">3,500,000$</string>
 </resources>

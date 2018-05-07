@@ -104,7 +104,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/hardware/ic_keyboard_arrow_left_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/hardware/ic_keyboard_arrow_right_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -114,9 +114,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="assetSourceType" value="FILE" />
-                            <entry key="color" value="ff5050" />
-                            <entry key="outputName" value="ic_more" />
+                            <entry key="color" value="95989a" />
+                            <entry key="outputName" value="ic_arrow_right" />
                             <entry key="sourceFile" value="C:\Users\ttqua\Desktop\abc\more.svg" />
                           </map>
                         </option>
