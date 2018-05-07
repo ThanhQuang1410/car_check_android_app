@@ -7,4 +7,5 @@
     <color name="primary_material_light_1">#000014</color>
     <color name="legacy_primary">#000014</color>
     <color name="legacy_primary_dark">#000014</color>
+    <color name="dark_trans">#be000014</color>
 </resources>

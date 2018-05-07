@@ -7,4 +7,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="featured">Xu hướng</string>
+    <string name="more"><![CDATA[Thêm nữa >>]]></string>
+    <string name="news">Tin tức</string>
+    <string name="review">Review</string>
+    <string name="brand">Hãng xe</string>
+
+    <string name="featured_head">BWM i10 sẽ trình làng thàng 10 năm nay</string>
+    <string name="news_head">Mẫu xe mới sẽ được xuất xưởng năm nay bởi hãng Ferari</string>
+    <string name="review_head">Cùng trải nghiệm siêu xe Farari xc21</string>
 </resources>
