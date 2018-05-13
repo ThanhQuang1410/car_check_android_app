@@ -37,7 +37,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_home, container, false);
         gridView =(GridView) view.findViewById(R.id.brand_list);
-        gridViewAdapter gridViewAdapter = new gridViewAdapter(this,name,logo);
+        gridViewAdapter gridViewAdapter = new gridViewAdapter(getContext(),name,logo);
         gridView.setAdapter(gridViewAdapter);
 
         return view;

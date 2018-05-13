@@ -13,7 +13,7 @@ public class gridViewAdapter extends BaseAdapter {
     private String[] brandName;
     private int[] brandLogo;
 
-    public gridViewAdapter(HomeFragment context, String[] brandName, int[] brandLogo) {
+    public gridViewAdapter(Context context, String[] brandName, int[] brandLogo) {
         this.context = context;
         this.brandName = brandName;
         this.brandLogo = brandLogo;
