@@ -1,14 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CompareFragment">
+    tools:context=".CompareFragment"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="COMPARE" />
+        android:background="@drawable/under_line">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/compare"
+            android:layout_gravity = "center"
+            android:textSize="20sp"
+            android:id="@+id/toolbar_title"
+            android:translationY="7dp"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/btn_input"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:weightSum="12"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/option"
+                android:layout_weight="9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:orientation="vertical"
+                android:backgroundTint="@color/white">
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_above="@+id/view_dif"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/circle"-->
+                <!--android:backgroundTint="@color/white"-->
+                <!--android:gravity="center"-->
+                <!--android:translationY="20dp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="OR"-->
+                <!--android:textColor="@color/dark" />-->
+                <!--</RelativeLayout>-->
+                <RelativeLayout
+                    android:id="@+id/empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white">
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/view_full"
+                    android:layout_above="@+id/view_dif"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="FULL"
+                        android:textColor="@color/white"
+                        android:background="@color/orange"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/view_dif"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="DIFFERNCES"
+                        android:textColor="@color/white"
+                        android:background="@color/orange"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="3"
+                    android:layout_marginTop="29dp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/car_name_comp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Car's name"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/input_radius"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VS"
+                        android:textColor="@color/orange"
+                        android:textStyle="bold"
+                        android:layout_weight="0.6"
+                        android:textAlignment="center"/>
+                    <EditText
+                        android:id="@+id/car_name_comp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Car's name"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/input_radius"
+                        android:padding="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp">
+                    <Button
+                        android:id="@+id/compare_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn1"
+                        android:text="COMPARE"
+                        android:textSize="19sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
