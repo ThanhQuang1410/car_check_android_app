@@ -35,11 +35,12 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-//        gridView =(GridView) view.findViewById(R.id.brand_list);
-//        gridViewAdapter gridViewAdapter = new gridViewAdapter(getContext(),name,logo);
-//        gridView.setAdapter(gridViewAdapter);
+        gridView = (GridView) view.findViewById(R.id.brand_list);
+        gridView.setColumnWidth(GridView.AUTO_FIT);
+        gridViewAdapter gridViewAdapter = new gridViewAdapter(getContext(), name, logo);
+        gridView.setAdapter(gridViewAdapter);
         return view;
 
     }

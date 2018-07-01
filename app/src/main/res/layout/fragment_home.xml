@@ -72,7 +72,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/featured_img"
+                    android:layout_below="@id/featured_img"
                     android:layout_marginTop="10dp"
                     android:weightSum="10">
 
@@ -99,7 +99,7 @@
                 android:id="@+id/news"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/featured"
+                android:layout_below="@id/featured"
                 android:layout_marginTop="30dp">
 
                 <RelativeLayout
@@ -151,7 +151,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/news_img"
+                    android:layout_below="@id/news_img"
                     android:layout_marginTop="10dp"
                     android:weightSum="10">
 
@@ -178,7 +178,7 @@
                 android:id="@+id/brand"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/news"
+                android:layout_below="@id/news"
                 android:layout_marginTop="30dp">
 
                 <LinearLayout
@@ -211,11 +211,11 @@
 
                 <GridView
                     android:id="@+id/brand_list"
-                    android:layout_marginTop="20dp"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:numColumns="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:numColumns="3"
                     android:stretchMode="columnWidth">
 
                 </GridView>
@@ -223,7 +223,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/brand_list"
+                    android:layout_below="@id/brand_list"
                     android:layout_marginTop="5dp"
                     android:weightSum="10">
 
@@ -250,7 +250,7 @@
                 android:id="@+id/reviews"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/brand"
+                android:layout_below="@id/brand"
                 android:layout_marginTop="30dp">
 
                 <RelativeLayout
@@ -302,7 +302,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/reviews_img"
+                    android:layout_below="@id/reviews_img"
                     android:layout_marginTop="10dp"
                     android:weightSum="10">
 
