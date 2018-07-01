@@ -24,6 +24,7 @@ public class main extends AppCompatActivity {
     private FollowFragment followFragment;
     private MoreFragment moreFragment;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
