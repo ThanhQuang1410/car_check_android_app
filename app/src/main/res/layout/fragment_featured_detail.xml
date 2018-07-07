@@ -55,20 +55,19 @@
                 android:layout_height="190dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/car1" />
-
             <TextView
                 android:id="@+id/tv_featured_tit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iv_featured_img"
-                android:paddingBottom="5dp"
-                android:paddingEnd="11dp"
+                android:text="HÃNG XE BMW TRÌNH LÀNG DÒNG XE MỚI"
                 android:paddingStart="11dp"
+                android:paddingEnd="11dp"
                 android:paddingTop="5dp"
-                android:text="XU HƯỚNG CHỌN XE CỦA NGƯỜI VIỆT NAM NĂM 2018"
-                android:textAllCaps="true"
+                android:paddingBottom="5dp"
                 android:textSize="17sp"
                 android:textStyle="bold"
+                android:textAllCaps="true"
                 android:textColor="@color/orange"/>
             <TextView
                 android:id="@+id/tv_featured_author"
