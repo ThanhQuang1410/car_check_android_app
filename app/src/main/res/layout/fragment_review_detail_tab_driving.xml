@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review_detail_tabDriving">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_review_driving">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_review_drivingDetail"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_review_car_author_price"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="Trải nghiệm siêu xe i8"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_review_author_price"
+                    android:orientation="horizontal"
+                    android:weightSum="12"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:id="@+id/tv_review_author"
+                        android:text="author: Thanh Quang"
+                        android:textColor="@color/grey"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/tv_review_carPrice"
+                        android:text="2.000.000.000đ - 2.500.000.000đ"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/car7"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:id="@+id/iv_review_driving_img"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_review_driving_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:id="@+id/tv_review_driving_tit"
+                    android:text="Trải nghiệm lái"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:id="@+id/tv_review_driving_subTit"
+                    android:text="Chiếc xe thể hiện như thê nào trên đường trường?"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="11dp"
+                    android:paddingStart="11dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sports cars are all very well when you get the chance to go max-attack. But most of the time, on most roads, that ain’t happening. And then the frustration just gnaws at you. The i8’s different.
+
+It isn’t quite the best six-figure sports car – though be assured it’s hardly shabby – for going flat-out on your favourite road. What makes it special is that in towns or no-overtaking road trains it adds all sorts of other dimensions to keep you engaged.
+
+But first you want to know how it is as a sports car. Move the transmission lever to the side to access sports mode. The dials turn red and the eco-meter becomes a rev-counter, the damper settings firm up, the HUD swaps navigation arrows for a tacho and shift-lights, and there’s extra engine sound – not wholly unlike a tamed version of a certain flat-six.
+
+It manages to get amazing performance from its souped up Mini Cooper 1.5-litre three-cylinder. In sports mode the engine keeps running all the time. Whenever you don’t need all its power for acceleration, it can use the front motor to push back and generate electricity into the battery. That way, next time you mash the accelerator, the engine and the front motor will both put their shoulders to the task.
+
+Performance really is up to sports-car standards – 0-62mph is in the mid-four-second range, and things keep going hard as you pass into three figures, albeit the top end is limited to 155mph.
+
+It could use more engine revs – the strict 6,500rpm limit isn’t all that exciting. Still, because of the electric torque there’s loads of response in the mid-ranges – so much so that it can get away, just, with a too-wide gap between second and third gears. Can a powertrain make life too easy? That’s a small quibble though, in an age when too many sports cars give us boring four-cylinder turbos.
+
+For the most part, cornering is good news too. The i8 stays level and true, diving into bends with surprising bite from the narrow front tyres. Mid-corner, the steering chatters engagingly if the nose weight changes over crests and dips. On unpredictable roads, the security of 4WD is a terrific reassurance.
+
+Chassis feedback through the seat is strong too. That said, the news it tells you can be inconsistent. Get on the power early in a corner, especially a slippery one, and it’s a guessing game as to whether you’ll get mild understeer or delicious mild oversteer. (Either way the ESP cuts in too early, so use its ‘dynamic setting.) It seems to depend on whether the front motor is busy regenerating as you come into the bend. Still, these are mild effects. Basically it’s a fun, agile and precise machine.
+
+It also rides well. It helps that you sit low between the wheels, where rocking and pitching don’t intrude, but even so the chassis has a nice absorbency. The narrow tyres generate remarkably little road noise by sports-car standards.
+
+The brakes are solid and trustworthy in hard going, but brushing the pedal gently in low-speed hybrid operation yields an artificial feel, as with practically any hybrid on earth.
+
+Ah yes, the hybrid mode. There’s fascination to be drawn from trying to drive in the sweet spot where all the systems are at their most efficient. The engine gets quieter when it’s running, and for much of the time it’s turned off. Occasionally you hit a slight delay when you ask for sudden power, but usually it anticipates you uncannily, given the complexity of the task.
+
+Finally, full-EV mode will take you a smooth, silent, stealthy and adequately nippy 25 miles after a full charge."/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_relate_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/tv_review_content"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:id="@+id/ll_relate_review_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="12">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/line3"
+                        android:layout_weight="5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tin liên quan"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn1"
+                        android:layout_weight="4"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="5dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/line3"
+                        android:layout_weight="3"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_relate_review_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="12"
+                    android:layout_marginTop="15dp">
+                    <RelativeLayout
+                        android:id="@+id/rl_relate_review_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/iv_relate_review_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/dark_trans"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_review_head"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trải nghiệm SUV BCX"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_relate_review_detail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/iv_relate_review_img2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/dark_trans"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_review_head2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trải nghiệm ABX Toyota"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_relate_review_detail3"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/iv_relate_review_img3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/dark_trans"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_review_head3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/featured_head"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

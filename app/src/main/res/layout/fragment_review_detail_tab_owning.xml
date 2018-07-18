@@ -1,100 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".news_list"
-    android:background="@color/white">
+    tools:context=".review_detail_tabDriving">
 
     <!-- TODO: Update blank fragment layout -->
-    <include
-        layout="@layout/simple_bar"
-        android:id="@+id/simple_bar_tit"/>
     <ScrollView
-        android:layout_below="@id/simple_bar_tit"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:id="@+id/rl_news_detail"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_review_owning">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
+            android:id="@+id/ll_review_owningDetail"
+            android:orientation="vertical">
             <LinearLayout
-                android:id="@+id/rl_news_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="12"
-                android:layout_marginBottom="5dp">
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/line2"
-                    android:layout_weight="4"/>
+                android:id="@+id/ll_review_car_author_price"
+                android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nov 14, 2018"
-                    android:textAlignment="center"
-                    android:textColor="@color/grey"
-                    android:background="@color/white"
-                    android:layout_weight="4"
-                    android:textSize="10sp"/>
-                <View
+                    android:layout_weight="6"
+                    android:text="Trải nghiệm siêu xe i8"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/line2"
-                    android:layout_weight="4"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_review_author_price"
+                    android:orientation="horizontal"
+                    android:weightSum="12"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:id="@+id/tv_review_author"
+                        android:text="author: Thanh Quang"
+                        android:textColor="@color/grey"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/tv_review_carPrice"
+                        android:text="2.000.000.000đ - 2.500.000.000đ"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"/>
+                </LinearLayout>
             </LinearLayout>
             <ImageView
-                android:layout_below="@+id/rl_news_date"
-                android:id="@+id/iv_news_img"
-                android:layout_width="wrap_content"
-                android:layout_height="190dp"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/car9"
                 android:scaleType="centerCrop"
-                android:src="@drawable/car1" />
-            <TextView
-                android:id="@+id/tv_news_tit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/iv_news_img"
-                android:text="HÃNG XE BMW TRÌNH LÀNG DÒNG XE MỚI"
-                android:paddingStart="11dp"
-                android:paddingEnd="11dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:textAllCaps="true"
-                android:textColor="@color/orange"/>
-            <TextView
-                android:id="@+id/tv_news_author"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_news_tit"
-                android:text="Author: Thanh Quang"
-                android:paddingStart="11dp"
-                android:textColor="@color/grey"
-                android:textSize="11sp"/>
-            <TextView
-                android:id="@+id/tv_news_content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="11dp"
-                android:paddingEnd="11dp"
-                android:layout_below="@+id/tv_news_author"
-                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+                android:layout_marginTop="10dp"
+                android:id="@+id/iv_review_owning_img"/>
             <LinearLayout
-                android:id="@+id/ll_relate_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_review_owning_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:id="@+id/tv_review_owning_tit"
+                    android:text="Việc sở hữu chiếc siêu xe này"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:id="@+id/tv_review_owning_subTit"
+                    android:text="Chi phí vận hành và độ tin cậy"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="11dp"
+                    android:paddingStart="11dp"
+                    android:layout_marginTop="10dp"
+                    android:text="The i8 comes with a Government subsidy to buy it, and does stupendously good fuel economy, and has three years/36k miles of servicing included in the price.
+
+But here’s the thing… despite all that it’s still more expensive to own than the nearest equivalent, a 911 Carrera 4 Tiptronic. Reason is depreciation: it’s substantially dearer to buy, and yet worth less at three years old.
+
+On the other hand if you’re a company-car driver, the picture changes because the i8’s benefit in kind, which depends on CO2, is so much lower. To someone in the 40 per cent tax bracket, it’s going to be about £20k in tax over three years/60,000 miles to drive an i8, and double that for the 911.
+
+Now, the official fuel figure is 156.9mpg and CO2 42 g/km for the Coupe, with the Roadster slightly worse at 141.2mpg and 46g/km.
+
+Of course official fuel figures can be pretty meaningless for a PHEV. If you drive 25 miles to work, and charge it at home and work, you might never use any fuel at all for your commuting. And even driving it like we stole it on super-twisty roads, with no recharging, we got 25mpg. Rival combustion cars would have been well down in the teens. Even so, make sure you specify the optional 42-litre fuel tank, not the silly 30-litre standard one.
+
+One of the cleverest ways the i8 reduces fuel consumption in favour of electricity is to assume you’ll be charging up at your sat-nav destination. It divvies up the work between the petrol and electric propulsion, favouring electricity in an effort to use the minimum of petrol and deplete the battery charge just as you arrive.
+
+The i8 can’t take rapid DC charging, or even medium-speed AC charging, but its battery is relatively small at 11.8kWh nominal. Charge time on a 3.6kW wall box is under three hours. BMW tries to make it easy to use public points with its ChargeNow card, which organises payment across several networks so you don’t have to sign up to them all.
+
+Speccing is straightforward – standard kit includes HUD, connected navigation, Harman Kardon audio, LED headlights and more. You can’t get any lane-keeping or adaptive cruise systems, because there’s no room for the sensors. The headline option, beyond trim and paint colours, are a set of insanely bright laser headlights that gouge deep into the night."/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_relate_review"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_below="@+id/tv_news_content"
+                android:layout_below="@+id/tv_review_content"
                 android:layout_marginTop="20dp">
                 <LinearLayout
-                    android:id="@+id/ll_relate_news_tag"
+                    android:id="@+id/ll_relate_review_tag"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -127,13 +154,13 @@
                         android:layout_weight="3"/>
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/ll_relate_news_list"
+                    android:id="@+id/ll_relate_review_list"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="12"
                     android:layout_marginTop="15dp">
                     <RelativeLayout
-                        android:id="@+id/rl_relate_news_detail"
+                        android:id="@+id/rl_relate_review_detail"
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:layout_marginBottom="20dp"
@@ -141,7 +168,7 @@
                         android:layout_marginEnd="5dp"
                         android:layout_marginStart="5dp">
                         <ImageView
-                            android:id="@+id/iv_relate_news_img"
+                            android:id="@+id/iv_relate_review_img"
                             android:layout_width="wrap_content"
                             android:layout_height="90dp"
                             android:scaleType="centerCrop"
@@ -155,17 +182,17 @@
                             android:padding="5dp">
 
                             <TextView
-                                android:id="@+id/tv_news_head"
+                                android:id="@+id/tv_review_head"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/featured_head"
+                                android:text="Trải nghiệm SUV BCX"
                                 android:textColor="@color/white"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
                         </RelativeLayout>
                     </RelativeLayout>
                     <RelativeLayout
-                        android:id="@+id/rl_relate_news_detail2"
+                        android:id="@+id/rl_relate_review_detail2"
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:layout_marginBottom="20dp"
@@ -173,7 +200,7 @@
                         android:layout_marginEnd="5dp"
                         android:layout_marginStart="5dp">
                         <ImageView
-                            android:id="@+id/iv_relate_news_img2"
+                            android:id="@+id/iv_relate_review_img2"
                             android:layout_width="wrap_content"
                             android:layout_height="90dp"
                             android:scaleType="centerCrop"
@@ -187,17 +214,17 @@
                             android:padding="5dp">
 
                             <TextView
-                                android:id="@+id/tv_news_head2"
+                                android:id="@+id/tv_review_head2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/featured_head"
+                                android:text="Trải nghiệm ABX Toyota"
                                 android:textColor="@color/white"
                                 android:textSize="12sp"
                                 android:textStyle="bold" />
                         </RelativeLayout>
                     </RelativeLayout>
                     <RelativeLayout
-                        android:id="@+id/rl_relate_news_detail3"
+                        android:id="@+id/rl_relate_review_detail3"
                         android:layout_width="match_parent"
                         android:layout_height="90dp"
                         android:layout_marginBottom="20dp"
@@ -205,7 +232,7 @@
                         android:layout_marginEnd="5dp"
                         android:layout_marginStart="5dp">
                         <ImageView
-                            android:id="@+id/iv_relate_news_img3"
+                            android:id="@+id/iv_relate_review_img3"
                             android:layout_width="wrap_content"
                             android:layout_height="90dp"
                             android:scaleType="centerCrop"
@@ -219,7 +246,7 @@
                             android:padding="5dp">
 
                             <TextView
-                                android:id="@+id/tv_news_head3"
+                                android:id="@+id/tv_review_head3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/featured_head"
@@ -230,6 +257,7 @@
                     </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
-        </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
-</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review_list"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        layout="@layout/simple_bar"
+        android:id="@+id/simple_bar_tit"/>
+    <ScrollView
+        android:layout_below="@id/simple_bar_tit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_review_detail"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:id="@+id/rl_review_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="12"
+                android:layout_marginBottom="5dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/line2"
+                    android:layout_weight="4"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nov 14, 2018"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:background="@color/white"
+                    android:layout_weight="4"
+                    android:textSize="10sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/line2"
+                    android:layout_weight="4"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_below="@+id/rl_review_date"
+                android:id="@+id/iv_review_img"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/car1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dark_trans"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tv_review_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="i8 review"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review_detail_tabDriving">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_review_verdict">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verdict_verdictDetail"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/verdict_car_author_price"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="Trải nghiệm siêu xe i8"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/verdict_author_price"
+                    android:orientation="horizontal"
+                    android:weightSum="12"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:id="@+id/tv_review_author"
+                        android:text="author: Thanh Quang"
+                        android:textColor="@color/grey"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/tv_review_carPrice"
+                        android:text="2.000.000.000đ - 2.500.000.000đ"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/verdict_verdict_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:id="@+id/tv_review_verdict_tit"
+                    android:text="Lời khuyên của chúng tôi"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:id="@+id/tv_review_verdict_subTit"
+                    android:text="Những suy nghĩ tổng quan và lựa chọn phú hợp nhất"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/verdict_verdict_carChoosen"
+                android:background="@color/light_grey"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/car7"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/iv_review_verdict_img"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/verdict_verdict_carName">
+                    <TextView
+                        android:id="@+id/tv_review_verdict_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="BMW Protonic Frozen Black Edition 2dr Auto"
+                        android:padding="11dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_review_verdict_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="2.150.000đ"
+                        android:textStyle="bold"
+                        android:paddingBottom="11dp"
+                        android:textColor="@color/orange"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/car10"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/iv_review_verdict_img2"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/verdict_icon"
+                    android:weightSum="4"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="11dp">
+
+                        <LinearLayout
+                            android:id="@+id/verdict_icon_fuel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_fuel" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="135mpg"
+                                android:textAlignment="center"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/verdict_icon_engine"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_engine" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="362bhp"
+                                android:textAlignment="center"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/verdict_icon_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_time" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="135mpg"
+                                android:textAlignment="center"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/verdict_icon_co2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_co2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="362bhp"
+                                android:textAlignment="center"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn4"
+                    android:text="XEM THÊM THÔNG TIN"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_review_verdict_table_infor">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11dp"
+                    android:id="@+id/ll_review_verdict_table_infor_row"
+                    android:orientation="horizontal"
+                    android:weightSum="12">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenght"
+                        android:textStyle="bold"
+                        android:id="@+id/ll_review_verdict_table_infor_tit"
+                        android:layout_weight="5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_review_verdict_table_infor_text"
+                        android:layout_weight="7"
+                        android:text="4,689mm"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_relate_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/tv_review_content"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:id="@+id/ll_relate_review_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="12">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/line3"
+                        android:layout_weight="5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tin liên quan"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn1"
+                        android:layout_weight="4"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="5dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/line3"
+                        android:layout_weight="3"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_relate_review_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="12"
+                    android:layout_marginTop="15dp">
+                    <RelativeLayout
+                        android:id="@+id/rl_relate_review_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/iv_relate_review_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/dark_trans"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_review_head"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trải nghiệm SUV BCX"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_relate_review_detail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/iv_relate_review_img2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/dark_trans"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_review_head2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trải nghiệm ABX Toyota"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_relate_review_detail3"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/iv_relate_review_img3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/dark_trans"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_review_head3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/featured_head"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

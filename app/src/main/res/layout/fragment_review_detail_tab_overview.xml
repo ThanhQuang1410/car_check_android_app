@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review_detail_tabOverview"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_review_overview">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_review_overviewDetail">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_review_car_author_price"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="Trải nghiệm siêu xe i8"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_review_author_price"
+                    android:orientation="horizontal"
+                    android:weightSum="12"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="9"
+                        android:id="@+id/tv_review_author"
+                        android:text="author: Thanh Quang"
+                        android:textColor="@color/grey"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/tv_review_carPrice"
+                        android:text="2.000.000.000đ - 2.500.000.000đ"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_review_imgDemo"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:src="@drawable/car3"
+                    android:id="@+id/iv_review_img_toshow"
+                    android:scaleType="centerCrop"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_review_img_thumb"
+                    android:orientation="horizontal"
+                    android:weightSum="12"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/car3"
+                        android:layout_weight="4"
+                        android:scaleType="centerCrop"
+                        android:alpha="0.7"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/car3"
+                        android:layout_weight="4"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:alpha="0.7"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:src="@drawable/car3"
+                        android:layout_weight="4"
+                        android:scaleType="centerCrop"
+                        android:alpha="0.7"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ll_review_overview_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_review_overview"
+                    android:text="Tổng quan"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_review_overview_content"
+                    android:paddingStart="11dp"
+                    android:paddingEnd="11dp"
+                    android:layout_marginTop="10dp"
+                    android:text="One of the world’s fastest SUVs. The Lamborghini Urus is what happens when the maker of the planet’s most outlandish supercars turns its hand to a large five-door family car with proper ground clearance and off-road ability. On paper it’s a clash of purposes, in reality it’s a mouth-watering prospect. Can Lamborghini inject some real supercar DNA into a 2.2-tonne SUV that shares its underpinnings with the Audi Q7, Bentley Bentayga and Porsche Cayenne? Can it justify the £165,000 price tag when you can have a SQ7 for £74k? And can someone tell us why it put the rear door handle where it did?
+
+It’s been an agonising six year wait for the 2012 Urus concept to turn into the production car here, but Lamborghini is a tiny company don’t forget, selling just 3,500 cars a year (a figure it hopes to double with the Urus). Getting this car right could catapult Lamborghini into a different orbit - with more money to build more hairy-arsed supercars we know and love. It’s why there’s a tangible feeling, at the launch event in Rome, that this car matters, deeply, to each and every employee. Failure is not an option.
+
+The Urus arrives surfing on the wave of an SUV explosion. Bentley has taken off-road luxury to a new level, the £300k Rolls Royce Cullinan is just around the corner, Jeep is busy shoving Hellcat engines into the Grand Cherokee and even Ferrari is exploring its options. But, for now at least, the Urus stands alone as the world’s first and only true Super SUV. Let’s hope it can live up to the billing."/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_relate_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/tv_review_content"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:id="@+id/ll_relate_review_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="12">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/line3"
+                        android:layout_weight="5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tin liên quan"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn1"
+                        android:layout_weight="4"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:paddingTop="5dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/line3"
+                        android:layout_weight="3"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_relate_review_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="12"
+                    android:layout_marginTop="15dp">
+                    <RelativeLayout
+                        android:id="@+id/rl_relate_review_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/iv_relate_review_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/dark_trans"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_review_head"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trải nghiệm SUV BCX"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_relate_review_detail2"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/iv_relate_review_img2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/dark_trans"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_review_head2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Trải nghiệm ABX Toyota"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_relate_review_detail3"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="4"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp">
+                        <ImageView
+                            android:id="@+id/iv_relate_review_img3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/dark_trans"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_review_head3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/featured_head"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
