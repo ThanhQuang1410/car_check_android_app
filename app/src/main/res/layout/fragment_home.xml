@@ -215,7 +215,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="40dp"
-                    android:numColumns="3"
+                    android:numColumns="4"
                     android:stretchMode="columnWidth">
 
                 </GridView>

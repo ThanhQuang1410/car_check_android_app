@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp">
+
+    <ImageView
+        android:id="@+id/iv_brand_detail_car_img"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/car4"/>
+
+    <TextView
+        android:id="@+id/tv_brand_detail_car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Flat c500"
+        android:textAllCaps="true"
+        android:translationY="0dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_brand_detail_car_price"
+        android:text="3.500.000.000đ"
+        android:textSize="11sp"
+        android:translationY="0dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_brand_detail_car_color"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/v_brand_detail_car_specific_color"
+            android:background="@drawable/circle_2"/>
+    </LinearLayout>
+</LinearLayout>

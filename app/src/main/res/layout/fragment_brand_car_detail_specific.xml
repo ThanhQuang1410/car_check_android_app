@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".brand_car_detail_specific"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        layout="@layout/simple_bar"
+        android:id="@+id/simple_bar_tit"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_brand_detail_infor"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_brand_car_name_price"
+                android:orientation="horizontal"
+                android:paddingStart="11dp"
+                android:paddingEnd="11dp"
+                android:weightSum="12">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_name"
+                    android:id="@+id/tv_brand_car_name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_weight="5"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_brand_car_price"
+                    android:textSize="18sp"
+                    android:textColor="@color/orange"
+                    android:textStyle="bold"
+                    android:text="3.500.000đ"
+                    android:layout_weight="7"
+                    android:textAlignment="textEnd"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/car4"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="20dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_brand_detail_car_color"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/v_brand_detail_car_specific_color"
+                    android:background="@drawable/circle_2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/verdict_icon"
+                android:weightSum="4"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="11dp">
+
+                <LinearLayout
+                    android:id="@+id/verdict_icon_fuel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_fuel" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="135mpg"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verdict_icon_engine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_engine" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="362bhp"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verdict_icon_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_time" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="135mpg"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verdict_icon_co2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_co2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="362bhp"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:weightSum="12"
+                android:orientation="vertical"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:weightSum="12"
+                    android:layout_marginBottom="10dp">
+                    <Button
+                        android:id="@+id/btn_view_infor"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn4"
+                        android:text="XEM THÔNG TIN XE"
+                        android:textColor="@color/white"
+                        android:layout_weight="6"
+                        android:layout_marginEnd="10dp"/>
+                    <Button
+                        android:id="@+id/btn_view_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn4"
+                        android:text="XEM HÌNH ẢNH XE"
+                        android:textColor="@color/white"
+                        android:layout_weight="6"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:weightSum="12">
+                    <Button
+                        android:id="@+id/btn_goto_compare"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn4"
+                        android:text="so sánh"
+                        android:textColor="@color/white"
+                        android:layout_weight="6"
+                        android:layout_marginEnd="10dp"/>
+                    <Button
+                        android:id="@+id/btn_add_to_follow"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn5"
+                        android:text="THEO DÕI XE"
+                        android:textColor="@color/orange"
+                        android:layout_weight="6"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/fl_show_content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

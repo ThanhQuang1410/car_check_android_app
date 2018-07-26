@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".brand_detail"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        layout="@layout/simple_bar"
+        android:id="@+id/simple_bar_tit"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/iv_logo_brand"
+        android:src="@drawable/brand_alfaromeo"
+        android:layout_gravity="center"/>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tl_brand_tab">
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vp_brand_content">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
